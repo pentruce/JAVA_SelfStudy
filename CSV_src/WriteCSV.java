@@ -56,3 +56,21 @@ public class WriteCSV {
 	}
 
 }
+
+//데이터 (이름) 추가
+BufferedWriter bufWriter = new BufferedWriter(new FileWriter(outputFile));
+
+//csv파일의 모든 데이터
+List<List<String>> allData = CSV 읽기 처리의 반환값을 설정
+
+//1행분의 데이터
+List<String> list = allData.get(allList);
+
+for(String data : list) {
+	bufWriter.write(data);
+	bufWriter.write(",");
+}
+
+//추가할 데이터(이름) 추가
+bufWriter.write("***");
+
