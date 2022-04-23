@@ -1,0 +1,10 @@
+package ***;
+public class ***{
+  public void main (String[] args) {
+  
+    Calendar calt = Calendar.getInstance();
+		SimpleDateFormat sdt = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");
+		System.out.printf("%s\n", sdt.format(calt.getTime()));
+    }
+   }
+  }
