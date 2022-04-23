@@ -17,15 +17,15 @@ import java.util.regex.Pattern;
 public class WriteCSV {
 
 	public static void main(String[] args) {
-		//Ãâ·Â ½ºÆ®¸² ¿ÀºêÁ§Æ® »ı¼º
+		//ì¶œë ¥ ìŠ¤íŠ¸ë¦¼ ì˜¤ë¸Œì íŠ¸ ìƒì„±
 		BufferedWriter bufWriter = null;
 		try {
 			bufWriter = Files.newBufferedWriter(Paths.get("***.csv"), Charset.forName("UTF-8"));
-			//CSVÆÄÀÏ ÀĞ±â
+			//CSVíŒŒì¼ ì½ê¸°
 			List<List<String>> allData = readCSV();
 			for(List<String> newLine : allData) {
 			
-				//1ÇàºĞÀÇ µ¥ÀÌÅÍ
+				//1í–‰ë¶„ì˜ ë°ì´í„°
 				List<String> list = newLine;
 				
 				for (String data : list) {
@@ -33,10 +33,10 @@ public class WriteCSV {
 					bufWriter.write(",");
 				}
 				
-				//Ãß°¡ÇÒ ÀÌ¸§ µ¥ÀÌÅÍ Ãß°¡
-				bufWriter.write("ÀÌ¸§");
+				//ì¶”ê°€í•  ì´ë¦„ ë°ì´í„° ì¶”ê°€
+				bufWriter.write("ì´ë¦„");
 				
-				//°³Çà ÄÚµå Ãß°¡
+				//ê°œí–‰ ì½”ë“œ ì¶”ê°€
 				bufWriter.newLine();
 			}
 		} catch (FileNotFoundException e) {
@@ -56,25 +56,3 @@ public class WriteCSV {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
