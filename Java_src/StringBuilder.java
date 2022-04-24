@@ -1,6 +1,6 @@
 package WhiteBoard;
 //KOPO_15
-//"+" ¿¬»êÀÚ ´ë½Å¿¡ ¹®ÀÚ¿­ ¿¬°á¿¡ ÀÌ¿ëÇÒ ¼ö ÀÖ´Â Å¬·¡½º : StringBuilder!!
+//"+" ì—°ì‚°ì ëŒ€ì‹ ì— ë¬¸ìì—´ ì—°ê²°ì— ì´ìš©í•  ìˆ˜ ìˆëŠ” í´ë˜ìŠ¤ : StringBuilder!!
 public class StringBuilder {
 
 	public static void main(String[] args) {
@@ -15,6 +15,6 @@ public class StringBuilder {
 		
 	}
 
-	private void append(String text2) {
+	private void append(String text) {
 	}
 }
